@@ -9,7 +9,7 @@ source.include_exts = py,png,jpg,kv,atlas
 
 version = 14.0
 
-requirements = python3,kivy==2.2.1,requests,urllib3,openssl,pyjnius
+requirements = python3,kivy,requests,urllib3,pyjnius,openssl
 
 orientation = portrait
 fullscreen = 0
@@ -22,10 +22,7 @@ android.ndk = 25b
 android.sdk = 24
 android.accept_sdk_license = True
 
-android.archos = arm64-v8a
 android.archs = arm64-v8a
-
-p4a.branch = develop
 
 [buildozer]
 
