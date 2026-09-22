@@ -1,17 +1,15 @@
 [app]
+
 title = WSCAN
 package.name = wscan
 package.domain = com.wscan
-
-icon.filename = %(source.dir)s/icon.png
-presplash.filename = %(source.dir)s/presplash.png
 
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
 
 version = 14.0
 
-requirements = python3,kivy==2.2.1,requests,urllib3,openssl,pyjnius,android,charset-normalizer,idna,certifi
+requirements = python3,kivy==2.2.1,requests,urllib3,openssl,pyjnius
 
 orientation = portrait
 fullscreen = 0
@@ -24,8 +22,12 @@ android.ndk = 25b
 android.sdk = 24
 android.accept_sdk_license = True
 
+android.archos = arm64-v8a
 android.archs = arm64-v8a
 
+p4a.branch = develop
+
 [buildozer]
+
 log_level = 2
 warn_on_root = 1
